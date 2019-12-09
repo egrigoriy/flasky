@@ -4,4 +4,9 @@
     <div class="header">
         <h1>This is the home page</h1>
     </div>
+    <div>
+        <p>Локальное число и время: {{ moment(current_time).format("LLLL") }}</p>
+        <p>Это было {{ moment(current_time).fromNow(refresh=True) }}</p>
+
+    </div>
 {% endblock %}
